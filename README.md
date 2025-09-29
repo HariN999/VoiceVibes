@@ -34,7 +34,7 @@ VoiceVibes/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/VoiceVibes.git
+git clone https://github.com/HariN999/VoiceVibes.git
 cd VoiceVibes
 ````
 
