@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceVibes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>VoiceVibes</h1>
+        <p class="subtitle">Machine Learning for Emotion Identification in Speech [cite: 1]</p>
+
+        <div class="upload-box">
+            <form method="post" enctype="multipart/form-data">
+                <p>Upload your audio file to analyze the emotion.</p>
+                <input type="file" name="file" accept="audio/*">
+                <button type="submit">Analyze</button>
+            </form>
+        </div>
+
+        {% if prediction %}
+        <div class="result-box">
+            <h2>Analysis Result</h2>
+            <p id="prediction-text">{{ prediction }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

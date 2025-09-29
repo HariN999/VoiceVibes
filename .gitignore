@@ -1,0 +1,29 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Flask instance folder (if used)
+instance/
+
+# Dependencies
+*.egg-info/
+pip-log.txt
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model files (optional: if you want to store large models elsewhere)
+*.h5
+*.hdf5
