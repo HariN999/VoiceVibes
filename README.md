@@ -15,6 +15,8 @@ VoiceVibes/
 ├── voicevibes_cnn_model.h5 # Pre-trained CNN model
 ├── templates/
 │   └── index.html         # HTML template for UI
+└── static/
+    └── style.css          # Style template for UI
 
 ````
 
