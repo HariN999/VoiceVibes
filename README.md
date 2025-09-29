@@ -53,8 +53,15 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+4. **Download / Generate the Model**
+Before running the Flask app, you need the model file. Run:
 
----
+```bash
+python model.py 
+```
+💡 Tip: It is recommended to use Google Colab for generating or training the model, especially if your local machine has limited resources. Colab provides free GPU support and ensures faster model creation.
+
+This will either download the pre-trained CNN model or generate it locally, saving it as voicevibes_cnn_model.h5 in the project folder.
 
 ## 🚀 Running the Application
 
